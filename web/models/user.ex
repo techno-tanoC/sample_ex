@@ -32,6 +32,10 @@ defmodule SampleApp.User do
     changeset(struct, params) |> set_password_digest
   end
 
+  def new do
+    %SampleApp.User{} |> cast(:empty, @required_fields, @optional_fields)
+  end
+
   defp set_password_digest(changeset) do
     digest  =
       Ecto.Changeset.get_field(changeset, :password)
