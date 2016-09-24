@@ -23,6 +23,8 @@ defmodule SampleApp.Web do
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
+
+      import SampleApp.Helpers.ValidateHelper
     end
   end
 

@@ -5,5 +5,5 @@
     <a href="http://railstutorial.jp/">Ruby on Rails Tutorial</a>
     for Phoenix sample application.
   </h2>
-  <a href="#" class="btn btn-large btn-primary">Sign up now!</a>
+  <%= link "Sign up now!", to: user_path(@conn, :new), class: "btn btn-large btn-primary" %>
 </div>
