@@ -1,0 +1,17 @@
+<footer class="footer">
+  <nav>
+    <ul>
+      <li>
+        <%= link "About", to: static_pages_path(@conn, :about) %>
+      </li>
+      <li>
+        <%= link "Contact", to: static_pages_path(@conn, :contact) %>
+      </li>
+      <li>
+        <a href="http://www.phoenixframework.org/docs">
+          Phoenix Get Started
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>

@@ -2,7 +2,7 @@ defmodule SampleApp.StaticPagesController do
   use SampleApp.Web, :controller
 
   def home(conn, _params) do
-    render conn, "home.html", message: "Home"
+    render conn, "home.html"
   end
 
   def help(conn, _params) do
@@ -11,5 +11,9 @@ defmodule SampleApp.StaticPagesController do
 
   def about(conn, _params) do
     render conn, "about.html", message: "About"
+  end
+
+  def contact(conn, _params) do
+    render conn, "contact.html"
   end
 end
